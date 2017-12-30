@@ -1,0 +1,5518 @@
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int int_GY(int,int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input numbers"<<endl;
+	for(int int_R1(0),int_R2(0);cin>>int_R1>>int_R2;)
+	{
+		cout<<(int_R1*int_R2/int_GY(int_R1,int_R2))<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int int_GY(int R1,int R2)
+{
+	if(R1<R2)
+	{
+		int a(0);
+		a=R1;
+		R1=R2;
+		R2=a;
+	}
+	if((R1%R2)!=0)
+	{
+		return int_GY(R2,R1%R2);
+	}
+	else
+	{
+		return R2;
+	}
+}
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int int_GY(int,int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input numbers"<<endl;
+	for(int int_R1(0),int_R2(0);cin>>int_R1>>int_R2;)
+	{
+		cout<<int_GY(int_R1,int_R2)<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int int_GY(int R1,int R2)
+{
+	if(R1<R2)
+	{
+		int a(0);
+		a=R1;
+		R1=R2;
+		R2=a;
+	}
+	if((R1%R2)!=0)
+	{
+		return int_GY(R2,R1%R2);
+	}
+	else
+	{
+		return R2;
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//不用向量给文件字符串排序。
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	ifstream if_InFile("Number.txt");
+	for(string str_StrIn;getline(if_InFile,str_StrIn);)
+	{
+		string str_StrInTem;
+		for(istringstream iss_IsStr(str_StrIn);iss_IsStr>>str_StrInTem;)
+		{
+			sort(str_StrInTem.begin(),str_StrInTem.end());
+			cout<<str_StrInTem<<' ';
+		}
+		cout<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+/*	for(string s;getline(cin,s);)
+	{
+//		cout<<"cin\n";
+		int n;
+		for(istringstream iss(s);iss>>n;)
+		{
+			cout<<"ok\n";
+			cout<<n<<endl;
+		}
+	}*/
+	cout<<"Plesee input numbers seperated by spacekey ending with Enter key:\n";
+	while(1)
+	{
+		int i_Sum(0);
+		for(int ch;((ch=cin.get())!='\n')&&(ch!=' ');)
+		{
+			i_Sum+=(ch-48);
+		}
+		cout<<i_Sum<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+double C(int,int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int i_A(0),i_B(0);
+	cout<<"Please input pairs of numbers:\n";
+	for(;cin>>i_A>>i_B;)
+	{
+		cout<<C(i_A,i_B)<<'\n';
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+double C(int a,int b)
+{
+	double r(1),d(b);
+	for(int i(1);i<=b;i++)
+	{
+		r*=a;
+		a--;
+		r/=d;
+		d--;
+	}
+	return r;
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+typedef vector<vector<int> > vv;
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+bool Test1(vv*,int);
+bool Test2(vv*,int);
+vv input(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input a number indicating that there are groups of number of data ,and each group starts with a number indicating that there are a table of number muiply number\n";
+	while(1)
+	{
+		int i_N(0);
+		cin>>i_N;
+		string s_S;
+		for(int j(1);j<=i_N;j++)
+		{
+			int i_SoL;
+			cin>>i_SoL;
+			vv vv_L;
+			vv_L=input(i_SoL);
+/*			for(int x(0);x<i_SoL;x++)
+			{
+				for(int y(0);y<i_SoL;y++)
+				{
+					cout<<vv_L[x][y];
+				}
+				cout<<'\n';
+			}*/
+			if(Test1(&vv_L,i_SoL) && Test2(&vv_L,i_SoL))
+			{
+				s_S +="YES ";
+			}
+			else
+			{
+				s_S +="NO ";
+			}
+		}
+		stringstream ss_C(s_S);
+		for(string s_C;ss_C>>s_C;)
+		{
+			cout<<s_C<<'\n';
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+bool Test1(vv* p,int t)
+{
+//	cout<<'t'<<"  "<<t<<"   ";
+//	cout<<(*p)[0][3]<<"  ";
+	bool b_flg(true);
+	for(int k(0);k<t;k++)
+	{
+		for(int l(0);l<(t/2);l++)
+		{
+			if(b_flg)//提前判断，提高效率。
+			{
+				if((*p)[k][l]!=(*p)[k][t-l-1])
+				{
+					b_flg=false;
+//					cout<<"Pan1\n";
+//					cout<<'t'<<"  "<<t;
+//					cout<<(*p)[k][l]<<"   "<<(*p)[k][t-l-1];
+				}
+//				cout<<endl;
+			}
+		}
+	}
+//	cout<<b_flg<<endl;
+	return b_flg;
+}
+
+bool Test2(vv* p,int t)
+{
+	bool b_flg(true);
+	for(int k(0);k<t;k++)
+	{
+		for(int l(0);l<(t/2);l++)
+		{
+			if(b_flg)//提前判断，提高效率。
+			{
+				if((*p)[l][k]!=(*p)[t-l-1][k])
+				{
+					b_flg=false;
+//					cout<<(*p)[l][k]<<"  "<<(*p)[t-l][k];
+				}
+//				cout<<endl;
+			}
+		}
+	}
+//	cout<<b_flg<<endl;
+	return b_flg;
+}
+
+vv input(int t)
+{
+	vv vv_L;
+	for(int i(1);i<=t;i++)
+	{
+		vector<int> v_T;
+		for(int j(1);j<=t;j++)
+		{
+			int i_T(0);
+			cin>>i_T;
+			v_T.push_back(i_T);
+		}
+		vv_L.push_back(v_T);
+	}
+/*	for(int x(0);x<t;x++)
+	{
+		for(int y(0);y<t;y++)
+		{
+			cout<<vv_L[x][y];
+		}
+		cout<<'\n';
+	}*/
+	return vv_L;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//打印三角形
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int LetterTest(char);  //输入控制
+int NumberTest(int);   // 输入控制
+void TriAnglePrint(char,int);  //图形绘制
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	char char_LetterRec;
+	cout<<"Please Input pairs of Letters and Numbers Like A 10  :\n";
+	while((cin>>char_LetterRec)&&(cin>>int_NumberRec))
+	{
+		if(NumberTest(int_NumberRec) && LetterTest(char_LetterRec))
+		{
+			TriAnglePrint(char_LetterRec,int_NumberRec);
+		}
+		else
+		{
+			cout<<"Your Letter or Number is WRONG !"<<"\n";
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int LetterTest(char char_LetterTemp)
+{
+	if(33<=char_LetterTemp && char_LetterTemp<=126)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+int NumberTest(int int_NumberTemp)
+{
+	if(1<=int_NumberTemp && int_NumberTemp<=30)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+void TriAnglePrint(char char_LetterPrint,int int_NumberPrint)
+{
+	for(int i=1;i<=int_NumberPrint;i++)  //行控制
+	{
+		for(int j=1;j<=(int_NumberPrint-i);j++) //空格输出
+		{
+			cout<<" ";
+		}
+		for(int k=1;k<=(2*i-1);k++)  //字符输出
+		{
+			cout<<char_LetterPrint;
+		}
+		cout<<"\n";
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//TriAngle With Given Letter
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+#define h 7
+#define w 13
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int TestChar(char);  //输入控制；
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	char char_LetterRec;
+	cout<<"Please Input An UpLetter:\n";
+	cin>>char_LetterRec;
+	if(TestChar(char_LetterRec))
+	{
+		for(int i=1;i<=h;i++)
+		{
+			for(int j=1;j<=(h-i);j++)
+			{
+				cout<<" ";
+			}
+			for(int k=1;k<=(i*2-1);k++)
+			{
+				cout<<char_LetterRec;
+			}
+			cout<<"\n";
+		}
+	}
+	else
+	{
+		cout<<"Your Letter is out of Requirement. Please try again!"<<"\n"; //错误处理；
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int TestChar(char char_Temp)
+{
+	if('A'<=char_Temp && char_Temp <= 'Z')
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//Total Number Calculate
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int SumFactors(int); 
+int TestNumber(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	cout<<"Please Input a Number:\n";
+	while(cin>>int_NumberRec)
+	{
+		if(TestNumber(int_NumberRec))
+		{
+			for(int k=1;k <= int_NumberRec;k++)
+			{
+				if(SumFactors(k)==k)
+				{
+					cout<<int_NumberRec<<":   ";
+					for(int j=1;j<=int_NumberRec;j++)
+					{
+						if(SumFactors(j)==j)
+						{
+							cout<<j<<"  ";
+						}
+					}
+					cout<<"\n";
+					break;
+				}
+			}
+		}
+		else
+		{
+			cout<<"You Number is WRONG!"<<"\n";
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int SumFactors(int int_NUmberTemp) 
+{
+	int int_SumOfFactor(0);
+	for (int i=1;i<=int_NUmberTemp/2;i++) 
+	{
+		if ((int_NUmberTemp % i) == 0) 
+		{
+            int_SumOfFactor +=i;
+		}
+	}
+    return int_SumOfFactor;
+}
+int TestNumber(int int_TempNumber)
+{
+	if(int_TempNumber>1 && int_TempNumber<10000)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+
+
+//Statement About the Prommer
+//Page21 SUM
+//Copy Right By Yueqi11-2-Zhou Chenglong
+
+
+//=========================================================================
+//The Include Files
+
+#include<iostream>
+using namespace std;
+//=========================================================================
+//Globle Function Statement
+
+int NatrueIntSum(int);
+int TestNumber(int);
+//=========================================================================
+//Function Definition
+
+int NatrueIntSum(int int_Natrue)    //计算1->N的自然数之和；
+{
+	int int_Sum(0);
+	int_Sum=int_Natrue*(int_Natrue+1)/2;
+	return int_Sum;
+}
+
+int TestNumber(int int_TestNumber)   //判断输入的数是否合法；
+{
+	if(int_TestNumber>0 && int_TestNumber<= 10000)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+//-------------------------------------------------------------------------
+int main()
+{
+	int int_NumberRecive(0),int_NumberSum(0);
+	cout<<"Please Input a Number:\n";
+	while(cin>>int_NumberRecive)   //消息循环；
+	{
+		if(TestNumber(int_NumberRecive))  //调用数字判断；
+		{
+		int_NumberSum=NatrueIntSum(int_NumberRecive);  //调用求和函数；
+		cout<<int_NumberSum<<"\n";
+		}
+		else
+		{
+			cout<<"Please input a legal Number!"<<"\n"; //错误处理；
+		}
+	}
+	return 0;
+
+}
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//Calculate the Subtraction of Two Numbers
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int Sub(int,int);  //计算两个数差值；
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRecA(0),int_NumberRecB(0);
+	int int_Subtraction(0);
+	cout<<"Please Input pairs of Numbers:\n";
+	while((cin>>int_NumberRecA) && (cin>>int_NumberRecB))
+	{
+		int_Subtraction=Sub(int_NumberRecA,int_NumberRecB);
+		cout<<int_Subtraction<<"\n";
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int Sub(int int_NumberTempA,int int_NumberTempB)
+{
+	int int_TempC(0);
+	int_TempC=int_NumberTempA-int_NumberTempB;
+	return int_TempC;
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+bool Test(vector<int>&,int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input a number indicating that there are number lines of data ,and each line starts with a number indicating there are number numbers\n";
+	while(1)
+	{
+		int i_N(0);
+		cin>>i_N;
+		string s_S;
+		for(int j(1);j<=i_N;j++)
+		{
+			int i_SoL;
+			cin>>i_SoL;
+			vector<int>v_L(i_SoL);
+			for(int k(0);k<i_SoL;k++)
+			{
+				cin>>v_L[k];
+			}
+			sort(v_L.begin(),v_L.end());
+			vector<int>*vp_P=&v_L;
+			if(Test(*vp_P,i_SoL))
+			{
+				s_S +="yes ";
+			}
+			else
+			{
+				s_S +="no ";
+			}
+		}
+		stringstream ss_C(s_S);
+		for(string s_C;ss_C>>s_C;)
+		{
+			cout<<s_C<<'\n';
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+bool Test(vector<int>&p,int t)
+{
+	bool f(true);
+	for(int i(0);i<(t-2);i++)
+	{
+		if(f==false)
+		{
+			return false;
+		}
+		else
+		{
+			if((p[i]-p[i+1])!=(p[i+1]-p[i+2]))
+			{
+				f=false;
+			}
+		}
+	}
+	return f;
+}
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+int int_NumberResoult(0);
+
+
+//=============================================================================================
+//Function Reference
+int NumberTest(int); //输入范围判断
+void SetFactors(vector<int>&); //制作素数表
+void SetParalle(vector<int>&);//制作对称素数表
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please wait while Initionalizing!\n";
+	int int_NumberRec(0);
+//	int one(1);
+//	int two(2);
+//	int zero(0);
+	clock_t start=clock();
+	vector<int>p_NumberMap(1001,1); //初始化向量表
+	cout<<"NumberMap Intionalize OK!\n";
+	cout<<"Please wait while Factoring......\n";
+	SetFactors(p_NumberMap);
+	cout<<"Factor done!\n";
+	cout<<"Please wait while Paralelling......\n";
+	SetParalle(p_NumberMap);
+	cout<<"Factor done!\n";
+	cout<<"You spent more than ";
+	cout<<((clock()*1.0-start)/(CLK_TCK*1.0));
+	cout<<" seconds to set the number table!\n";
+//	cout<<p_NumberMap[7]<<'\n';
+/*	if(p_NumberMap[7]==2)
+	{
+		cout<<"Compara OK!\n";
+	}
+	else
+	{
+		cout<<"Compara False!\n";
+	}*/
+/*	for(int i=1;i<=999;i++)
+	{
+		cout<<i<<' '<<p_NumberMap[i]<<'\n';
+	}*/
+	cout<<"Please Input Numbers,WARING! Press EnterKey TWICE !!!!!:\n";//等待输入
+	istringstream sin_NumberCon;
+	int int_NumberT(0);
+	for(string s_StrRec;getline(cin,s_StrRec);)
+	{
+		for(istringstream sin_SinCon(s_StrRec);sin_SinCon>>int_NumberT;)
+		{
+			if(NumberTest(int_NumberT)) //判断输入是否合法
+			{
+//				cout<<int_NumberT<<'\n';
+//				cout<<p_NumberMap[int_NumberT]<<'\n';
+				if(p_NumberMap[int_NumberT]==2)
+				{
+					cout<<"YES"<<endl;
+//					int_NumberResoult++;
+				}
+				else
+				{
+					cout<<"NO"<<endl;
+				}
+			}
+			else
+			{
+					cout<<"NO"<<endl;
+			}
+		}
+//		cout<<int_NumberResoult<<"\n";
+//		int_NumberResoult=0;
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int NumberTest(int int_NumberTemp)
+{
+	if((99 < int_NumberTemp) && (int_NumberTemp < 1000))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+void SetFactors(vector<int>&p_Temp)
+{
+	for(int i=2;i < 100;i++)
+	{
+		for(int j=2;i*j<1000;j++)
+		{
+			p_Temp[i*j]=0;
+		}
+	}
+	p_Temp[1]=0;
+	p_Temp[1000]=0;
+}
+void SetParalle(vector<int>&p_Temp)
+{
+	p_Temp[2]=2;
+	p_Temp[3]=2;
+	p_Temp[5]=2;
+	p_Temp[7]=2;
+	p_Temp[11]=2;
+//	cout<<p_Temp[7]<<'\n';
+	for(int a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			if(p_Temp[a*100+b*10+a]==1)
+			{
+				p_Temp[a*100+b*10+a]=2;
+//				cout<<p_Temp[a*100+b*10+a]<<'\n';
+			}
+		}
+	}
+/*
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			if(p_Temp[a*1000+b*100+b*10+a]==1)
+			{
+				p_Temp[a*1000+b*100+b*10+a]=2;
+//				cout<<p_Temp[a*1000+b*100+b*10+a]<<'\n';
+			}
+		}
+	}
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				if(p_Temp[a*10000+b*1000+c*100+b*10+a]==1)
+				{
+					p_Temp[a*10000+b*1000+c*100+b*10+a]=2;
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				if(p_Temp[a*100000+b*10000+c*1000+c*100+b*10+a]==1)
+				{
+					p_Temp[a*100000+b*10000+c*1000+c*100+b*10+a]=2;
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					if(p_Temp[a*1000000+b*100000+c*10000+d*1000+c*100+b*10+a]==1)
+					{
+						p_Temp[a*1000000+b*100000+c*10000+d*1000+c*100+b*10+a]=2;
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					if(p_Temp[a*10000000+b*1000000+c*100000+d*10000+d*1000+c*100+b*10+a]==1)
+					{
+						p_Temp[a*10000000+b*1000000+c*100000+d*10000+d*1000+c*100+b*10+a]=2;
+					}
+				}
+			}
+		}
+	}
+*/
+}
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//right-angled triangle
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int TestNumber(int);
+
+
+
+//=============================================================================================
+//Function Definition
+int TestNumber(int int_TempNumber)  //数字判断；
+{
+	if(int_TempNumber>=1 && int_TempNumber<=50)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	cout<<"Please Input a Number:\n";
+	cin>>int_NumberRec;
+	if(TestNumber(int_NumberRec))  //调用数字判断；
+	{
+		for(int i=1;i<=int_NumberRec;i++)  //控制行；
+		{
+			for(int j=1;j<=int_NumberRec;j++) //控制每一行中个数；
+			{
+				cout<<"#";
+			}
+			cout<<"\n";
+		}
+	}
+	else 
+	{
+		cout<<"Your Number is wrong! Please tyr again!"<<"\n";  //出错处理；
+	}
+	return 0;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+int int_NumberResoult(0);
+
+
+//=============================================================================================
+//Function Reference
+int NumberTest(int); //输入范围判断
+void SetFactors(vector<int>&); //制作素数表
+void SetParalle(vector<int>&);//制作对称素数表
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please wait while Initionalizing!\n";
+	int int_NumberRec(0);
+//	int one(1);
+//	int two(2);
+//	int zero(0);
+	clock_t start=clock();
+	vector<int>p_NumberMap(100001,1); //初始化向量表
+	cout<<"NumberMap Intionalize OK!\n";
+	cout<<"Please wait while Factoring......\n";
+	SetFactors(p_NumberMap);
+	cout<<"Factor done!\n";
+	cout<<"Please wait while Paralelling......\n";
+	SetParalle(p_NumberMap);
+	cout<<"Factor done!\n";
+	cout<<"You spent more than ";
+	cout<<((clock()*1.0-start)/(CLK_TCK*1.0));
+	cout<<" seconds to set the number table!\n";
+//	cout<<p_NumberMap[7]<<'\n';
+/*	if(p_NumberMap[7]==2)
+	{
+		cout<<"Compara OK!\n";
+	}
+	else
+	{
+		cout<<"Compara False!\n";
+	}*/
+/*	for(int i=1;i<=999;i++)
+	{
+		cout<<i<<' '<<p_NumberMap[i]<<'\n';
+	}*/
+	cout<<"Please Input Numbers,WARING! Press EnterKey TWICE !!!!!:\n";//等待输入
+	istringstream sin_NumberCon;
+	int int_NumberT(0);
+	for(string s_StrRec;getline(cin,s_StrRec);)
+	{
+		for(istringstream sin_SinCon(s_StrRec);sin_SinCon>>int_NumberT;)
+		{
+			if(NumberTest(int_NumberT)) //判断输入是否合法
+			{
+//				cout<<int_NumberT<<'\n';
+//				cout<<p_NumberMap[int_NumberT]<<'\n';
+				if(p_NumberMap[int_NumberT]==2)
+				{
+					cout<<"YES"<<endl;
+//					int_NumberResoult++;
+				}
+				else
+				{
+					cout<<"NO"<<endl;
+				}
+			}
+			else
+			{
+					cout<<"NO"<<endl;
+			}
+		}
+//		cout<<int_NumberResoult<<"\n";
+//		int_NumberResoult=0;
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int NumberTest(int int_NumberTemp)
+{
+	if((9 < int_NumberTemp) && (int_NumberTemp < 100000))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+void SetFactors(vector<int>&p_Temp)
+{
+	for(int i=2;i < 10000;i++)
+	{
+		for(int j=2;i*j<100000;j++)
+		{
+			p_Temp[i*j]=0;
+		}
+	}
+	p_Temp[1]=0;
+	p_Temp[100000]=0;
+}
+void SetParalle(vector<int>&p_Temp)
+{
+	p_Temp[2]=2;
+	p_Temp[3]=2;
+	p_Temp[5]=2;
+	p_Temp[7]=2;
+	p_Temp[11]=2;
+//	cout<<p_Temp[7]<<'\n';
+	for(int a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			if(p_Temp[a*100+b*10+a]==1)
+			{
+				p_Temp[a*100+b*10+a]=2;
+//				cout<<p_Temp[a*100+b*10+a]<<'\n';
+			}
+		}
+	}
+
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			if(p_Temp[a*1000+b*100+b*10+a]==1)
+			{
+				p_Temp[a*1000+b*100+b*10+a]=2;
+//				cout<<p_Temp[a*1000+b*100+b*10+a]<<'\n';
+			}
+		}
+	}
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				if(p_Temp[a*10000+b*1000+c*100+b*10+a]==1)
+				{
+					p_Temp[a*10000+b*1000+c*100+b*10+a]=2;
+				}
+			}
+		}
+	}
+/*	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				if(p_Temp[a*100000+b*10000+c*1000+c*100+b*10+a]==1)
+				{
+					p_Temp[a*100000+b*10000+c*1000+c*100+b*10+a]=2;
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					if(p_Temp[a*1000000+b*100000+c*10000+d*1000+c*100+b*10+a]==1)
+					{
+						p_Temp[a*1000000+b*100000+c*10000+d*1000+c*100+b*10+a]=2;
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					if(p_Temp[a*10000000+b*1000000+c*100000+d*10000+d*1000+c*100+b*10+a]==1)
+					{
+						p_Temp[a*10000000+b*1000000+c*100000+d*10000+d*1000+c*100+b*10+a]=2;
+					}
+				}
+			}
+		}
+	}
+*/
+}
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//在堆中申请大量内存空间，摒弃了向量模板造成的效率低下，该程序虽然丑陋但是效率还算十分高的。
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include <process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+void factor(unsigned int*);
+int NumberTest(int);
+void SetBit(int,unsigned int*);
+int ReadBit(int,unsigned int*);
+void SetParalle(unsigned int*);
+
+//=============================================================================================
+//Main
+int main()
+{
+	cout<<"Please wait while initionalizing......\n";
+	clock_t start=clock();
+	unsigned int* p_NumberTable=(unsigned int*)malloc(12500000);
+	if(!p_NumberTable)
+	{
+		cout<<"No Enough MEMORY !!!!!!\n";
+		return 1;
+	}
+	memset(p_NumberTable,255,12500000);
+	cout<<"NumberMap Intionalize OK!\n";
+	cout<<"Please wait while factoring......\n";
+	factor(p_NumberTable);
+	cout<<"Factor done!\n";
+	cout<<"Please wait while Paralleling......\n";
+	SetParalle(p_NumberTable);
+	cout<<"Paralle done!\n";
+	cout<<"You spent more than ";
+	cout<<((clock()*1.0-start)/(CLK_TCK*1.0));
+	cout<<" seconds to set the number table!\n";
+	cout<<"Please Input Numbers,WARING! Press EnterKey TWICE !!!!!:\n";//等待输入
+	istringstream sin_NumberCon;
+	int int_NumberResoult=0;
+	int int_NumberT(0);
+	for(string s_StrRec;getline(cin,s_StrRec);)
+	{
+		for(istringstream sin_SinCon(s_StrRec);sin_SinCon>>int_NumberT;)
+		{
+			if(NumberTest(int_NumberT)) //判断输入是否合法
+			{
+//				cout<<int_NumberT<<'\n';
+//				cout<<p_NumberMap[int_NumberT]<<'\n';
+				if(ReadBit(int_NumberT,p_NumberTable))
+				{
+//					cout<<"OK\n";
+					int_NumberResoult++;
+				}
+			}
+			else
+			{
+				cout<<"Your Number is WRONG!";  //出错处理
+			}
+		}
+		cout<<int_NumberResoult<<"\n";
+		int_NumberResoult=0;
+	}
+	
+//	int_NumberResoult=0;
+	free(p_NumberTable);
+	return 0;
+}
+//=============================================================================================
+//Function Definition
+int ReadBit(int number,unsigned int* p)
+{
+	if(p[number/32] & (1<<(number%32)))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+void SetBit(int number,unsigned int* p)
+{
+	p[number/32] &= ~(1<<(number%32));
+}
+
+void factor(unsigned int* p)
+{
+	for(int i=2;i<=10000;i++)
+	{
+		if(p[i/32]&(1<<(i%32)))
+		{
+			for(int j=i*i;j<100000000;j += i)
+			{
+				p[j/32] &= ~(1<<(j%32));
+			}
+		}
+	}
+}
+
+
+/*
+void SetFactors(unsigned int* p)
+{
+	int k=0;
+	for(int i=2;i < 10000;i++)
+	{
+		for(int j=2;(k=i*j)<100000000;j++)
+		{
+			p[k]=0;
+		}
+	}
+}
+*/
+
+int NumberTest(int int_NumberTemp)
+{
+	if((1 < int_NumberTemp) && (int_NumberTemp < 10000000))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+void SetParalle(unsigned int* p)
+{
+	SetBit(2,p);
+	SetBit(3,p);
+	SetBit(5,p);
+	SetBit(7,p);
+//	cout<<p_Temp[7]<<'\n';
+	for(int a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=1;c<=9;c++)
+			{
+				if(ReadBit(a*100+b*10+c,p))
+				{
+					if((a*100+b*10+c)!=(c*100+b*10+a))
+					{
+						SetBit(a*100+b*10+c,p);
+					}
+				}
+			}
+		}
+	}
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=1;d<=9;d++)
+				{
+					if(ReadBit(a*1000+b*100+c*10+d,p))
+					{
+						if((a*1000+b*100+c*10+d)!=(d+c*10+b*100+a*1000))
+						{
+							SetBit(a*1000+b*100+c*10+d,p);
+						}
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					for(int e=1;e<=9;e++)
+					{
+						if(ReadBit(a*10000+b*1000+c*100+d*10+e,p))
+						{
+							if((a*10000+b*1000+c*100+d*10+e)!=(e+d*10+c*100+b*1000+a*10000))
+							{
+								SetBit(a*10000+b*1000+c*100+d*10+e,p);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					for(int e=0;e<=9;e++)
+					{
+						for(int f=1;f<=9;f++)
+						{
+							if(ReadBit(a*100000+b*10000+c*1000+d*100+e*10+f,p))
+							{
+								if((a*100000+b*10000+c*1000+d*100+e*10+f)!=(f+e*10+d*100+c*1000+b*10000+a*100000))
+								{
+									SetBit(a*100000+b*10000+c*1000+d*100+e*10+f,p);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					for(int e=0;e<=9;e++)
+					{
+						for(int f=0;f<=9;f++)
+						{
+							for(int g=1;g<=9;g++)
+							{
+								if(ReadBit(a*1000000+b*100000+c*10000+d*1000+e*100+f*10+g,p))
+								{
+									if((a*1000000+b*100000+c*10000+d*1000+e*100+f*10+g)!=(g+f*10+e*100+d*1000+c*10000+b*100000+a*1000000))
+									{
+										SetBit(a*1000000+b*100000+c*10000+d*1000+e*100+f*10+g,p);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+/*	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					for(int e=0;e<=9;e++)
+					{
+						for(int f=0;f<=9;f++)
+						{
+							for(int g=0;g<=9;g++)
+							{
+								for(int h=0;h<=9;h++)
+								{
+									if(p_Temp[a*10000000+b*1000000+c*100000+d*10000+e*1000+f*100+g*10+h]==1)
+									{
+										if((a*10000000+b*1000000+c*100000+d*10000+e*1000+f*100+g*10+h)!=(h+g*10+f*100+e*1000+d*10000+c*100000+b*1000000+a*10000000))
+										{
+											p_Temp.reset(a*10000000+b*1000000+c*100000+d*10000+e*1000+f*100+g*10+h);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}*/
+}
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+
+//---------------------------------------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"Welcome to the OPS."<<"\n";
+	return 0;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input string of 01\n";
+	for(string s_S;cin>>s_S;)
+	{
+		int i_l=s_S.length();
+		for(int i(0);i<=(i_l-1);i++)
+		{
+			if(s_S.substr(i,1)=="1")
+			{
+				s_S.replace(i,1,1,'0');
+			}
+			else
+			{
+				s_S.replace(i,1,1,'1');
+			}
+		}
+		cout<<s_S<<'\n';
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+typedef vector<int> v;
+typedef vector<char> v_cs;
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+v inputpass();//取得密钥
+v_cs encipher(v,v);//加密模块
+v_cs decod(v,v);//解密模块
+v InputText();//取得加密文本
+void Print(v_cs);//输出结果
+int getpass(v,bool);//密钥生成函数
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	while(1)
+	{
+		cout<<"Please input a serie of numbers as you passworld:\n";
+		v v_pass(inputpass());
+		cout<<"Please input you text ending with Enter key:\n";
+		v v_i(InputText());
+		v_cs vcs_O(encipher(v_pass,v_i));
+		Print(vcs_O);
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+v inputpass()
+{
+	v v_i;
+	for(int R(0);(R=cin.get())!='\n';)
+	{
+		v_i.push_back(R-48);
+	}
+	return v_i;
+}
+
+v InputText()
+{
+	v v_i;
+	for(int R(0);(R=cin.get())!='\n';)
+	{
+		v_i.push_back(R-32);
+	}
+	return v_i;
+}
+
+
+v_cs encipher(v pass,v text)
+{
+	v_cs vcs_s;
+	getpass(pass,true);
+	for(int i(0);i<=text.size();i++)
+	{
+		int passnumber=getpass(pass,false);
+		if((text[i]+passnumber==0))
+		{
+			vcs_s.push_back(' ');
+		}
+		else
+		{
+			if((text[i]+passnumber==90)||(text[i]+passnumber==180))
+			{
+				vcs_s.push_back('z');
+			}
+			else
+			{
+				vcs_s.push_back((char)((text[i]+passnumber)%90+32));
+			}
+		}
+	}
+	return vcs_s;
+}
+
+v_cs decod(v pass,v text)
+{
+	v_cs vcs_s;
+	getpass(pass,true);
+	for(int i(0);i<=(text.size()-1);i++)
+	{
+		int passnumber=getpass(pass,false);
+		if((text[i]-passnumber<0))
+		{
+			vcs_s.push_back((char)(text[i]-passnumber+90+32));
+		}
+		else
+		{
+			vcs_s.push_back((char)(text[i]-passnumber+32));
+		}
+	}
+	return vcs_s;
+}
+
+int getpass(v pass,bool flg)
+{
+	static int c(0);
+	if(flg)
+	{
+		c=0;
+		return 0;
+	}
+	else
+	{
+		if(c/pass.size()==0)
+		{
+			c++;
+			return (pass[c-1]);
+		}
+		else
+		{
+			c++;
+			return(pass[(c-1)-(((c-1)/pass.size())*pass.size())]);
+		}
+	}
+}
+
+
+void Print(v_cs text)
+{
+	for(int i(0);i<=(text.size()-1);i++)
+	{
+		cout<<text[i];
+	}
+	cout<<endl;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//格式阵列
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int TestNumber(int);
+void FormManPrint(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	cout<<"Please Input a Number:\n";
+	while(cin>>int_NumberRec)
+	{
+		if(TestNumber(int_NumberRec))
+		{
+			FormManPrint(int_NumberRec);
+		}
+		else
+		{
+			cout<<"Your Number is WRONG!"<<"\n";
+		}
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int TestNumber(int int_NumberTestTemp)
+{
+	if(1<=int_NumberTestTemp && int_NumberTestTemp<=30)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+
+void FormManPrint(int int_NumberTemp)
+{
+	for(int i=1;i<=int_NumberTemp;i++)
+	{
+		for(int j=1;j<=int_NumberTemp;j++)
+		{
+			cout<<" ("<<i<<","<<j<<")";			
+		}
+		cout<<endl;
+	}
+}
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int a(0),m(0);
+	m=(a++)+1;
+	cout<<a;
+/*	for(string s;getline(cin,s);)
+	{
+		cout<<"cin\n";
+		int n;
+		for(istringstream iss(s);iss>>n;)
+		{
+			cout<<"ok\n";
+			cout<<n<<endl;
+		}
+	}
+*/	
+/*	while(1)
+	{
+		for(int ch;(ch=cin.get())!='\n';)
+		{
+			cout<<ch;
+		}
+		cout<<endl;
+	}*/
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//Lprint
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int LetterTest(char);  //输入控制；
+int NumberTest(int);
+void TriAnglePrint(char,int);  //打印函数
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	char char_LetterRec;
+	cout<<"Please Input pairs of UperLetter With Number:\n";
+	while((cin>>char_LetterRec)&&(cin>>int_NumberRec))  //消息循环；
+	{
+		if(NumberTest(int_NumberRec) && LetterTest(char_LetterRec))
+		{
+			TriAnglePrint(char_LetterRec,int_NumberRec);
+		}
+		else
+		{
+			cout<<"Your Letter or Number is WRONG !"<<"\n";  //出错控制；
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int LetterTest(char char_LetterTemp)
+{
+	if(33<=char_LetterTemp && char_LetterTemp<=126)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+int NumberTest(int int_NumberTemp)
+{
+	if(1<=int_NumberTemp && int_NumberTemp<=30)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+void TriAnglePrint(char char_LetterPrint,int int_NumberPrint)
+{
+	for(int i=1;i<=int_NumberPrint;i++)  //上半部分打印
+	{
+		for(int j=1;j<=(int_NumberPrint-i);j++)
+		{
+			cout<<" ";
+		}
+		for(int k=1;k<=(2*i-1);k++)
+		{
+			cout<<char_LetterPrint;
+		}
+		cout<<"\n";
+	}
+		for(int l=1;l<=(int_NumberPrint-1);l++)  //下半部分打印
+		{
+			for(int n=1;n<=l;n++)
+			{
+				cout<<" ";
+			}
+			for(int m=1;m<=(2*int_NumberPrint-1-2*l);m++)
+			{
+				cout<<char_LetterPrint;
+			}
+			cout<<"\n";
+		}
+		
+	
+}
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int TestInput(char);
+char LetterConvert(char);
+
+
+
+//=============================================================================================
+//Function Definition
+int TestInput(char char_Temp)
+{
+//	cout<<char_Temp;
+	int int_Temp(0);
+	int_Temp=(int)char_Temp;
+//	cout<<int_Temp;
+	if((65 <= int_Temp) && (int_Temp <= 122))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+char LetterConvert(char char_Temp)
+{	
+	int int_Temp(0);
+	char char_Temp_C;
+	int_Temp=(int)char_Temp;
+	if((65 <= int_Temp) && (int_Temp <= 90))
+	{
+		return char_Temp;
+	}
+	else
+	{
+		int_Temp += 26;
+		char_Temp_C=(char)int_Temp;
+		return char_Temp_C;
+	}
+}
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	char char_LetterRec;
+	int int_Count(0);
+	cout<<"Please Input series of Letters separated by space key:\n";
+	for(;(char_LetterRec=cin.get()) != '\n';)
+	{
+		if(TestInput(char_LetterRec))
+		{
+			cout<<LetterConvert(char_LetterRec);
+			int_Count++;
+		}
+		else
+		{
+			if(char_LetterRec==' ')
+			{
+				continue;
+			}
+			else
+			{
+				cout<<"\n"<<"Your Input is WRONG! Please try again !\n";
+			}
+		}
+	}
+	cout<<"\n"<<int_Count<<"\n";
+	return 0;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+typedef vector<vector<int> > vv;
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+vv input(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input numbers like n groups and n lines of data :\n";
+	int int_L(0);
+	cout<<fixed;
+	cout.precision(5);
+	typedef vector<vector<int> > vv;
+	for(;cin>>int_L;)
+	{
+		vv vv_L(input(int_L));
+		for(int k(0);k<int_L;k++)
+		{
+			double double_avr(0);
+			for(int l(1);l<=vv_L[k][0];l++)
+			{
+				double_avr +=((vv_L[k][l]*1.0)/(vv_L[k][0]*1.0));
+			}
+			double sb(0);
+			for(int m(1);m<=vv_L[k][0];m++)
+			{
+				sb=sb+((vv_L[k][m]*1.0)-double_avr)*((vv_L[k][m]*1.0)-double_avr);
+			}
+			cout<<sqrt(sb/vv_L[k][0])<<'\n';
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+vv input(int t)
+{
+	vv vv_T;
+	for(int i(0);i<t;i++)
+	{
+		int i_R(0);
+		cin>>i_R;
+		vector<int> v(i_R+1);
+		v[0]=i_R;
+		for(int j(1);j<=i_R;j++)
+		{
+			int i_Re(0);
+			cin>>i_Re;
+			v[j]=i_Re;
+		}
+		vv_T.push_back(v);
+	}
+/*	for(int k(0);k<t;k++)
+	{
+		for(int l(1);l<=vv_T[k][0];l++)
+		{
+			cout<<vv_T[k][l]<<" \n";
+		}
+	}*/
+	return vv_T;
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+typedef vector<int> v;
+typedef vector<char> v_cs;
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+v inputpass();//取得密钥
+v_cs encipher(v,v);//加密模块
+v_cs decod(v,v);//解密模块
+v InputText();//取得加密文本
+void Print(v_cs);//输出结果
+int getpass(v,bool);//密钥生成函数
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	while(1)
+	{
+		cout<<"Please input a serie of numbers as you passworld:\n";
+		v v_pass(inputpass());
+		cout<<"Please input you text ending with Enter key:\n";
+		v v_i(InputText());
+		v_cs vcs_O(decod(v_pass,v_i));
+		Print(vcs_O);
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+v inputpass()
+{
+	v v_i;
+	for(int R(0);(R=cin.get())!='\n';)
+	{
+		v_i.push_back(R-48);
+	}
+	return v_i;
+}
+
+v InputText()
+{
+	v v_i;
+	for(int R(0);(R=cin.get())!='\n';)
+	{
+		v_i.push_back(R-32);
+	}
+	return v_i;
+}
+
+
+v_cs encipher(v pass,v text)
+{
+	v_cs vcs_s;
+	getpass(pass,true);
+	for(int i(0);i<=text.size();i++)
+	{
+		int passnumber=getpass(pass,false);
+		if((text[i]+passnumber==0))
+		{
+			vcs_s.push_back(' ');
+		}
+		else
+		{
+			if((text[i]+passnumber==90)||(text[i]+passnumber==180))
+			{
+				vcs_s.push_back('z');
+			}
+			else
+			{
+				vcs_s.push_back((char)((text[i]+passnumber)%90+32));
+			}
+		}
+	}
+	return vcs_s;
+}
+
+v_cs decod(v pass,v text)
+{
+	v_cs vcs_s;
+	getpass(pass,true);
+	for(int i(0);i<=(text.size()-1);i++)
+	{
+		int passnumber=getpass(pass,false);
+		if((text[i]-passnumber<0))
+		{
+			vcs_s.push_back((char)(text[i]-passnumber+90+32));
+		}
+		else
+		{
+			vcs_s.push_back((char)(text[i]-passnumber+32));
+		}
+	}
+	return vcs_s;
+}
+
+int getpass(v pass,bool flg)
+{
+	static int c(0);
+	if(flg)
+	{
+		c=0;
+		return 0;
+	}
+	else
+	{
+		if(c/pass.size()==0)
+		{
+			c++;
+			return (pass[c-1]);
+		}
+		else
+		{
+			c++;
+			return(pass[(c-1)-(((c-1)/pass.size())*pass.size())]);
+		}
+	}
+}
+
+
+void Print(v_cs text)
+{
+	for(int i(0);i<=(text.size()-1);i++)
+	{
+		cout<<text[i];
+	}
+	cout<<endl;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int int_NJieCheng(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input numbers"<<endl;
+	for(int int_R(0);cin>>int_R;)
+	{
+		int int_Sum(0);
+		for(int i(1);i<=int_R;i++)
+		{
+			int_Sum +=int_NJieCheng(i);
+		}
+		cout<<int_Sum<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int int_NJieCheng(int int_R)
+{
+	if(int_R==0)
+	{
+		return 0;
+	}
+	else
+	{
+		if(int_R==1)
+		{
+			return 1;
+		}
+		else
+		{
+			return int_R*int_NJieCheng(int_R-1);
+		}
+	}
+}
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+double Js(double);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input numbers"<<endl;
+	cout<<fixed;
+	cout.precision(6);
+	for(double NR(0);cin>>NR;)
+	{
+		cout<<"X="<<NR<<"sum="<<Js(NR)<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+double Js(double DN)
+{
+	double sum=1,a=DN;
+	for(int i=1;fabs(a)>1e-6;)
+	{
+		sum +=a;
+		a*=(-1)*DN/(++i);
+	}
+	return sum;
+}
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int NumberTest(int);
+int NumberFactor(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	cout<<"Please Input a Number:\n";
+	while(cin>>int_NumberRec)
+	{
+		if(NumberTest(int_NumberRec))
+		{
+			cout<<int_NumberRec<<": ";
+			cout<<NumberFactor(int_NumberRec)<<"\n";
+		}
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int NumberTest(int int_NumberTemp)
+{
+	if((1 <= int_NumberTemp) && (int_NumberTemp < 4294967296))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+int NumberFactor(int int_NumberTemp)
+{
+	int i(0);
+	for(int j=1;j<=int_NumberTemp;j++)
+	{
+		if(int_NumberTemp % j==0)
+		{
+			i += 1;
+		}
+	}
+	return i;
+}
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input numbers of int :\n";
+	for(int int_R(0);cin>>int_R;)
+	{
+		for(int i(31);i>=0;i--)
+		{
+			cout<<((int_R & (1<<i))?((int)1):((int)0));
+		}
+		cout<<"  "<<int_R<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//Form Mantri
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int TestNumber(int);
+void FormManPrint(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	cout<<"Please Input a Number:\n";
+	while(cin>>int_NumberRec)
+	{
+		if(TestNumber(int_NumberRec))
+		{
+			FormManPrint(int_NumberRec);
+		}
+		else
+		{
+			cout<<"Your Number is WRONG!"<<"\n";
+		}
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int TestNumber(int int_NumberTestTemp)
+{
+	if(1<=int_NumberTestTemp && int_NumberTestTemp<=30)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+void FormManPrint(int int_NumberTemp)
+{
+	for(int i=1;i<=int_NumberTemp;i++)
+	{
+		for(int j=1;j<=int_NumberTemp-1;j++)
+		{
+			if(i<10)
+			{
+				cout<<" "<<i<<"   ";
+			}
+			else
+			{
+				cout<<i<<"   ";
+			}
+			if(i+1<10)
+			{
+				cout<<" "<<(i-1)<<" ";
+			}
+			else
+			{
+				cout<<(i-1);
+			}
+			
+		}
+		cout<<endl;
+	}
+}
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//浮点数的位码。 
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please Input a Number of Float:\n";
+	long double float_NumberRec(0.0);
+	while(cin>>float_NumberRec)
+	{
+		char* charp_Char = (char*)&float_NumberRec;
+		for(int i=0 ;i<=4;i++)
+		{
+			for(int k=7;k>=0;k--)
+			{
+				cout<<((*(charp_Char + i) & (0X1<<k))?1:0);
+
+			}
+			cout<<",";			
+		}
+		cout<<"\n";
+		for(int j=5;j<=9;j++)
+		{
+			for(int l=7;l>=0;l--)
+			{
+				cout<<((*(charp_Char + j) & (0X1<<l))?1:0);
+			}
+			cout<<",";
+		}
+		cout<<"\n";
+	}
+	return 0;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//对称素数的另一种算法，提高效率，应用bitset。
+//但是由于数据量太大，bitset吃不消，栈溢出！
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<string>
+#include<vector>
+#include<process.h>
+#include<sstream>
+#include<bitset>
+
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+int int_NumberResoult(0);
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+void SetFactors(bitset<10000000>&);
+int NumberTest(int);
+void SetParalle(bitset<10000000>&);
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please wait while Initionalizing!\n";
+	int int_NumberRec(0);
+//	int one(1);
+//	int two(2);
+//	int zero(0);
+	bitset<10000000> p_NumberMap;
+	p_NumberMap.set();
+	cout<<"NumberMap Intionalize OK!\n";
+	cout<<"Please wait while Factoring......\n";
+	SetFactors(p_NumberMap);
+	cout<<"Factor done!\n";
+	cout<<"Please wait while Paralelling......\n";
+	SetParalle(p_NumberMap);
+	cout<<"Paralle done!\n";
+//	cout<<p_NumberMap[7]<<'\n';
+/*	if(p_NumberMap[7]==2)
+	{
+		cout<<"Compara OK!\n";
+	}
+	else
+	{
+		cout<<"Compara False!\n";
+	}*/
+/*	for(int i=1;i<=999;i++)
+	{
+		cout<<i<<' '<<p_NumberMap[i]<<'\n';
+	}*/
+	cout<<"Please Input Numbers,WARING! Press EnterKey TWICE !!!!!:\n";//等待输入
+	istringstream sin_NumberCon;
+	int int_NumberT(0);
+	for(string s_StrRec;getline(cin,s_StrRec);)
+	{
+		for(istringstream sin_SinCon(s_StrRec);sin_SinCon>>int_NumberT;)
+		{
+			if(NumberTest(int_NumberT)) //判断输入是否合法
+			{
+//				cout<<int_NumberT<<'\n';
+//				cout<<p_NumberMap[int_NumberT]<<'\n';
+				if(p_NumberMap[int_NumberT]==1)
+				{
+//					cout<<"OK\n";
+					int_NumberResoult++;
+				}
+			}
+			else
+			{
+				cout<<"Your Number is WRONG!";  //出错处理
+			}
+		}
+		cout<<int_NumberResoult<<"\n";
+		int_NumberResoult=0;
+	}
+	
+//	int_NumberResoult=0;
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int NumberTest(int int_NumberTemp)
+{
+	if((1 < int_NumberTemp) && (int_NumberTemp < 10000000))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+void SetFactors(bitset<10000000>&p_Temp)
+{
+	for(int i=2;i < 10000;i++)
+	{
+		for(int j=2;i*j<10000000;j++)
+		{
+			p_Temp.reset(i*j);
+		}
+	}
+	p_Temp.reset(1);
+	p_Temp.reset(9999999);
+}
+void SetParalle(bitset<10000000>&p_Temp)
+{
+	p_Temp.reset(2);
+	p_Temp.reset(3);
+	p_Temp.reset(5);
+	p_Temp.reset(7);
+	p_Temp.reset(11);
+//	cout<<p_Temp[7]<<'\n';
+	for(int a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=1;c<=9;c++)
+			{
+				if(p_Temp[a*100+b*10+c]==1)
+				{
+					if((a*100+b*10+c)!=(c*100+b*10+a))
+					{
+						p_Temp.reset(a*100+b*10+c);
+					}
+				}
+			}
+		}
+	}
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=1;d<=9;d++)
+				{
+					if(p_Temp[a*1000+b*100+c*10+d]==1)
+					{
+						if((a*1000+b*100+c*10+d)!=(d+c*10+b*100+a*1000))
+						{
+							p_Temp.reset(a*1000+b*100+c*10+d);
+						}
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					for(int e=1;e<=9;e++)
+					{
+						if(p_Temp[a*10000+b*1000+c*100+d*10+e]==1)
+						{
+							if((a*10000+b*1000+c*100+d*10+e)!=(e+d*10+c*100+b*1000+a*10000))
+							{
+								p_Temp.reset(a*10000+b*1000+c*100+d*10+e);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					for(int e=0;e<=9;e++)
+					{
+						for(int f=1;f<=9;f++)
+						{
+							if(p_Temp[a*100000+b*10000+c*1000+d*100+e*10+f]==1)
+							{
+								if((a*100000+b*10000+c*1000+d*100+e*10+f)!=(f+e*10+d*100+c*1000+b*10000+a*100000))
+								{
+									p_Temp.reset(a*100000+b*10000+c*1000+d*100+e*10+f);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					for(int e=0;e<=9;e++)
+					{
+						for(int f=0;f<=9;f++)
+						{
+							for(int g=1;g<=9;g++)
+							{
+								if(p_Temp[a*1000000+b*100000+c*10000+d*1000+e*100+f*10+g]==1)
+								{
+									if((a*1000000+b*100000+c*10000+d*1000+e*100+f*10+g)!=(g+f*10+e*100+d*1000+c*10000+b*100000+a*1000000))
+									{
+										p_Temp.reset(a*1000000+b*100000+c*10000+d*1000+e*100+f*10+g);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+/*	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					for(int e=0;e<=9;e++)
+					{
+						for(int f=0;f<=9;f++)
+						{
+							for(int g=0;g<=9;g++)
+							{
+								for(int h=0;h<=9;h++)
+								{
+									if(p_Temp[a*10000000+b*1000000+c*100000+d*10000+e*1000+f*100+g*10+h]==1)
+									{
+										if((a*10000000+b*1000000+c*100000+d*10000+e*1000+f*100+g*10+h)!=(h+g*10+f*100+e*1000+d*10000+c*100000+b*1000000+a*10000000))
+										{
+											p_Temp.reset(a*10000000+b*1000000+c*100000+d*10000+e*1000+f*100+g*10+h);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}*/
+}
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//12!配对
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+int int_Numb12=12 * 11 * 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2;
+int int_NumberRecA(0);
+int int_NumberRecB(0);
+int int_NumberCount(0);
+
+
+//=============================================================================================
+//Function Reference
+void NumberCalculate(int,int);
+int NumberTest(int);
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+//	int int_Numb12=12 * 11 * 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2;
+//	int int_NumberRecA(0);
+//	int int_NumberRecB(0);
+//	int int_NumberCount(0);
+	cout<<"Please Input Pairs of Numbers:\n";
+	for(;((int_NumberRecA=cin.get() != '\n') &&(int_NumberRecB=cin.get() != '\n'));)
+	{
+		if(NumberTest(int_NumberRecA) && NumberTest(int_NumberRecB))
+		{
+			NumberCalculate(int_NumberRecA,int_NumberRecB);
+		}
+	}
+	cout<<int_NumberCount<<"\n";
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int NumberTest(int int_NumberTemp)
+{
+	if((1 <= int_NumberTemp) && (int_NumberTemp < 4294967296))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+void NumberCalculate(int int_NumberTempA,int int_NumberTempB)
+{
+	if(int_NumberTempA * int_NumberTempB == int_Numb12)
+	{
+		int_NumberCount += 1;
+	}
+}
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+bool Div3(int);
+bool Div5(int);
+bool Div7(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	
+	cout<<"Please input numbers of int between 0 and 2^31 :\n";
+	for(int int_R(0);cin>>int_R;)
+	{
+		bool t3=Div3(int_R);
+		bool t5=Div5(int_R);
+		bool t7=Div7(int_R);
+		cout<<int_R<<"-->";
+		if(t3)
+		{
+			cout<<3;
+			if(t5)
+			{
+				cout<<",5";
+				if(t7)
+				{
+					cout<<",7";
+				}
+			}
+			else
+			{
+				if(t7)
+				{
+					cout<<",7";
+				}
+			}
+		}
+		else
+		{
+			if(t5)
+			{
+				cout<<5;
+				if(t7)
+				{
+					cout<<",7";
+				}
+			}
+			else
+			{
+				if(t7)
+				{
+					cout<<7;
+				}
+				else
+				{
+					cout<<"None";
+				}
+			}
+		}
+		cout<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+bool Div3(int R)
+{
+	if(R%3==0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+bool Div5(int R)
+{
+	if(R%5==0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+bool Div7(int R)
+{
+	if(R%7==0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+double double_NDengBi(double,int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Pleaser intput pairs of numbers like n and m"<<endl;
+	double double_RQ(0);
+	int int_RN(0);
+	for(;cin>>int_RN>>double_RQ;)
+	{
+		double double_Sum(0);
+		for(int i(0);i<=int_RN;i++)
+		{
+			double_Sum +=double_NDengBi(double_RQ,i);
+		}
+		cout<<double_Sum<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+double double_NDengBi(double RQ,int RN)
+{
+	if(RN==0)
+	{
+		return 1;
+	}
+	else
+	{
+		if(RN==1)
+		{
+			return RQ;
+		}
+		else
+		{
+			return RQ*double_NDengBi(RQ,RN-1);
+		}
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+#include<iomanip>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int Yang(int,int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input Numbers between 1 and 10\n";
+	for(int i_N(0);cin>>i_N;)
+	{
+		for(int i(1);i<=i_N;i++)
+		{
+			for(int j(1);j<=i-1;j++)
+			{
+				cout<<"   ";
+			}
+			for(int k(1);k<=i_N-i+1;k++)
+			{
+				cout<<setw(3)<<Yang(i_N-i+1,k)<<"   ";
+			}
+			cout<<'\n';
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int Yang(int a,int b)
+{
+	if((a==b)||(a==1)||(b==1))
+	{
+		return 1;
+	}
+	else
+	{
+		return Yang(a-1,b-1)+Yang(a-1,b);
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//Change Tri Angle
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+void ChanTriPrint(int,int);
+int TestNumber(int);
+
+
+
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	cout<<"Please Input A Number:\n";
+	while(cin>>int_NumberRec)
+	{
+		if(TestNumber(int_NumberRec))
+		{
+			ChanTriPrint(int_NumberRec);
+		}
+		else
+		{
+			cout<<"Your Number is WRONG!"<<"\n";
+		}
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+void ChanTriPrint(int int_NumberTemp)
+{
+	for(int i=1;i<=int_NumberTemp;i++)
+	{
+		for(int k=1;k<=i-1;k++)
+		{
+			cout<<" ";
+		}
+		for(int j=1;j<=int_NumberTemp-i;j++)
+		{
+			cout<<"ST";
+		}
+		cout<<"S"<<"\n";
+	}
+}
+int TestNumber(int int_NumberTestTemp)
+{
+	if(1<=int_NumberTestTemp && int_NumberTestTemp<=30)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+//---------------------------------------------------------------------------------------------
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int int_Bo(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+int main()
+{
+	cout<<"Please input numbers"<<endl;
+	for(int int_R(0);cin>>int_R;)
+	{
+		cout<<int_Bo(int_R)<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int int_Bo(int int_R)
+{
+	if(int_R==0)
+	{
+		return 0;
+	}
+	else
+	{
+		if(int_R==1)
+		{
+			return 1;
+		}
+		else
+		{
+			return int_Bo(int_R-1)+int_Bo(int_R-2);
+		}
+	}
+}
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//嵌入汇编语言的长双精度浮点位显示。
+//未完成！！！
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<string>
+#include<vector>
+#include<process.h>
+#include<sstream>
+#include<bitset>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please Input a Number of Float:\n";
+	long double float_NumberRec(0.0);
+	while(cin>>float_NumberRec)
+	{		
+		char* charp_Char = (char*)&float_NumberRec;
+		int* intp_Int=(int*)&float_NumberRec;
+		cout<<float_NumberRec<<'\n'<<&charp_Char<<'\n'<<*intp_Int<<'\n';
+		char char_bitOut[10]="        ,";
+		_asm
+		{
+			pushfd;
+			pushad;
+			mov cx,8;
+			mov bx,offset float_NumberRec;
+perbyte:
+			mov al,80H;
+perbit:
+			test al,[bx];
+			shr al,1;
+			inc bx;
+
+			dec cx;
+			jcxz exit;
+			jmp perbyte;
+exit:
+			popad;
+			popfd;
+		}
+	}
+	return 0;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//在堆中申请大量内存空间，摒弃了向量模板造成的效率低下，该程序虽然丑陋但是效率还算十分高的。
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+void SetBit(int,char*);
+int ReadBit(int,char*);
+
+//=============================================================================================
+//Main
+int main()
+{
+	ifstream if_InFile("Number.txt");
+	char* p_NumberTable=(char*)malloc(3000);
+	if(!p_NumberTable)
+	{
+		cout<<"No Enough MEMORY !!!!!!\n";
+		return 1;
+	}
+	memset(p_NumberTable,0,3000);
+	for(string s_StrRec;getline(cin,s_StrRec);)
+	{
+		for(istringstream sin_SinCon(s_StrRec);sin_SinCon>>int_NumberT;)
+		{
+			if(NumberTest(int_NumberT)) //判断输入是否合法
+			{
+//				cout<<int_NumberT<<'\n';
+//				cout<<p_NumberMap[int_NumberT]<<'\n';
+				if(ReadBit(int_NumberT,p_NumberTable))
+				{
+//					cout<<"OK\n";
+					int_NumberResoult++;
+				}
+			}
+			else
+			{
+				cout<<"Your Number is WRONG!";  //出错处理
+			}
+		}
+		cout<<int_NumberResoult<<"\n";
+		int_NumberResoult=0;
+	}
+	
+//	int_NumberResoult=0;
+	free(p_NumberTable);
+	return 0;
+}
+//=============================================================================================
+//Function Definition
+int ReadBit(int number,unsigned int* p)
+{
+	if(p[number/32] & (1<<(number%32)))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+void SetBit(int number,unsigned int* p)
+{
+	p[number/32] &= ~(1<<(number%32));
+}
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input numbers:\n";
+	for(int int_R(0);cin>>int_R;)
+	{
+		if(int_R==0)
+		{
+			cout<<"0-->0\n";
+		}
+		else
+		{
+			int int_C=abs(int_R);
+			string s_C;
+			string s_O;
+			for(int i(31);i>=0;i--)
+			{
+				if(int_C&(1<<i))
+				{
+					s_C=s_C+'1';
+				}
+				else
+				{
+					s_C=s_C+'0';
+				}
+
+			}
+//			copy(s_O,((unsigned int)(s_C.length)-s_C.find('1',1)),s_C.find('1',1));
+			cout<<int_R<<"-->";
+			s_O=s_C.substr(s_C.find('1',1),32);
+			if(int_R>=0)
+			{
+				cout<<s_O<<endl;
+			}
+			else
+			{
+				cout<<'-'<<s_O<<endl;
+			}
+		}
+
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//Back to Back Lettet Print
+//背靠背图形
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Function Reference
+int LetterTest(char);  //输入控制
+int NumberTest(int);
+void TriAnglePrint(char,int);  //图形打印控制；
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	char char_LetterRec;
+	cout<<"Please Input pairs of Letters and Numbers Like A 10  :\n";
+	while((cin>>char_LetterRec)&&(cin>>int_NumberRec))
+	{
+		if(NumberTest(int_NumberRec) && LetterTest(char_LetterRec))
+		{
+			TriAnglePrint(char_LetterRec,int_NumberRec);
+		}
+		else
+		{
+			cout<<"Your Letter or Number is WRONG !"<<"\n";
+		}
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int LetterTest(char char_LetterTemp)
+{
+	if(33<=char_LetterTemp && char_LetterTemp<=126)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+int NumberTest(int int_NumberTemp)
+{
+	if(1<=int_NumberTemp && int_NumberTemp<=30)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+void TriAnglePrint(char char_LetterPrint,int int_NumberPrint)
+{
+	for(int i=1;i<=int_NumberPrint;i++) //行控制
+	{
+		for(int j=1;j<=int_NumberPrint-i;j++) //空格打印
+		{
+			cout<<" ";
+		}
+		for(int k=1;k<=i;k++) //字符打印
+		{
+			cout<<char_LetterPrint;
+		}
+		cout<<" ";
+		for(int l=1;l<=i;l++)
+		{
+			cout<<char_LetterPrint;
+		}
+		cout<<"\n";
+	}
+}
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//Print Angle  @@@@@@@@@@@@
+//			   @@@@@@@@@@@@	
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+
+
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int TestNumber(int);
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	cout<<"Please Input a Number:\n";
+	cin>>int_NumberRec;
+	if(TestNumber(int_NumberRec))  //调用数字判断；
+	{
+		for(int i=1;i<=int_NumberRec;i++)  //打印@字符图形；
+		{
+			for(int j=1;j<=20;j++)
+			{
+				cout<<"@";
+			}
+			cout<<"\n";
+		}
+	}
+	else
+	{
+		cout<<"Please Input a Leagle Number[between 1 and 50]!";  //错误处理；
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int TestNumber(int int_TempNumber)  //数据判断；
+{
+	if(int_TempNumber>=1 && int_TempNumber<=50)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//Calculate The Area of right-angled triangle
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int TestNumber(int);  //输入控制；
+int CalculateArea(int);  //面积计算；
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int int_NumberRec(0);
+	int Area(0);
+	cout<<"Please Input a Number:\n"; 
+	while(cin>>int_NumberRec)  //消息循环；
+	{
+			if(TestNumber(int_NumberRec))
+			{
+				Area=CalculateArea(int_NumberRec);
+				cout<<Area<<"\n";
+			}
+			else 
+			{
+				cout<<"Your Number is wrong! Please tyr again!"<<"\n";
+			}
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int TestNumber(int int_TempNumber)
+{
+	if(int_TempNumber>=1 && int_TempNumber<=10000)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+int CalculateArea(int int_NumberTemp)
+{
+	return int_NumberTemp*int_NumberTemp;
+}
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+typedef vector<vector<int> > vvi;
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	while(1)
+	{
+		cout<<"Please input several lines of numbers of 0 and 1 ending with Enter key, and end the input by \" e \" key to display the result:\n";
+		vvi vvi_vv;
+		
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+vvi Input()
+{
+	vvi vv;
+
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please Input a Number of Float:\n";
+	long double float_NumberRec(0.0);
+	while(cin>>float_NumberRec)
+	{
+		char* charp_Char = (char*)&float_NumberRec;
+		for(int i=0 ;i<=4;i++)
+		{
+			for(int k=7;k>=0;k--)
+			{
+				cout<<((*(charp_Char + i) & (0X1<<k))?1:0);
+
+			}
+			cout<<",";			
+		}
+		cout<<"\n";
+		for(int j=5;j<=9;j++)
+		{
+			for(int l=7;l>=0;l--)
+			{
+				cout<<((*(charp_Char + j) & (0X1<<l))?1:0);
+			}
+			cout<<",";
+		}
+		cout<<"\n";
+	}
+	return 0;
+}
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+#include<iomanip>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int Yang(int,int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input Numbers between 1 and 10\n";
+	for(int i_N(0);cin>>i_N;)
+	{
+		for(int i(1);i<=i_N;i++)
+		{
+			for(int j(1);j<=(i_N-i);j++)
+			{
+				cout<<"   ";
+			}
+			for(int k(1);k<=i;k++)
+			{
+				cout<<setw(3)<<Yang(i,k)<<"   ";
+			}
+			cout<<'\n';
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int Yang(int a,int b)
+{
+	if((a==b)||(a==1)||(b==1))
+	{
+		return 1;
+	}
+	else
+	{
+		return Yang(a-1,b-1)+Yang(a-1,b);
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	int i_N(0);
+	cout<<"Please input datas and the press Enter key twice ending with \'d\' to display the sum of 25\n";
+	for(string s;getline(cin,s);)
+	{
+//		cout<<s<<"\n";
+		if(s.length()!=0)
+		{
+			string s_T1;
+			string s_C;
+//			cout<<"jie\n";
+			s_C=s.substr(0,1);
+//			cout<<s_C<<"\n";
+//			cout<<"jieOK\n";
+			if(s_C!="d")
+			{
+				s_T1=s.substr(5,2);
+//				cout<<s_T1<<endl;
+				if(s_T1=="25")
+				{
+//					cout<<"Plus\n";
+					i_N += (s.length()-11);
+				}
+			}
+			else
+			{
+				cout<<i_N<<endl;
+			}
+
+		}
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<fixed;
+	cout.precision(3);
+	cout<<"Please input numbers!"<<endl; 
+	for(string s;getline(cin,s);)
+	{
+		istringstream iss(s);
+		int NB(0);
+		iss>>NB;
+		double sum(0);
+		double NBR(0);
+		for(int i=1;i<=NB;i++)
+		{
+			iss>>NBR;
+			sum += NBR;
+		}
+		cout<<sum/NB<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//
+//
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<sstream>
+#include<process.h>
+#include<bitset>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<algorithm>
+
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+
+
+
+//=============================================================================================
+//Function Reference
+int nYear(int);
+
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please input years between 1 and 40:\n";
+	for(int int_R(0);cin>>int_R;)
+	{
+		int sum(0);
+		sum=nYear(int_R);
+		cout<<sum<<endl;
+	}
+	return 0;
+}
+
+
+//=============================================================================================
+//Function Definition
+int nYear(int n)
+{
+	int i=n/3;
+	int a(1),b(1),c(1);
+	if(n%3==0)
+	{
+		--i;
+//		cout<<i;
+	}
+	for(int j(1);j<=i;j++)
+	{
+		a+=c;
+		b+=a;
+		c+=b;
+	}
+	if(n%3==0)
+	{
+		return c;
+	}
+	else
+	{
+		if(n%3==1)
+		{
+			return a;
+		}
+		else
+		{
+			if(n%3==2)
+			{
+				return b;
+			}
+		}
+	}
+}
+
+
+
+//Programmer Statement
+//Copy Right By Yueqi-11-2-Zhou Chenglong
+//Programmer About
+//这是一个用来生成通用模板的代码文件。
+//对称素数
+//改程序使用了极其庞大的向量，消耗内存严重，效率相当差！
+//
+//
+//
+//
+//=============================================================================================
+//The Include Files
+#include<iostream>
+#include<string>
+#include<vector>
+#include <process.h>
+#include<sstream>
+#include<time.h>
+
+//=============================================================================================
+//NameSpace Useage
+using namespace std;
+//=============================================================================================
+//Globle Definition
+
+
+
+
+//=============================================================================================
+//Globle Var Definition
+int int_NumberResoult(0);
+
+
+//=============================================================================================
+//Function Reference
+int NumberTest(int); //输入范围判断
+void SetFactors(vector<int>&); //制作素数表
+void SetParalle(vector<int>&);//制作对称素数表
+
+
+//---------------------------------------------------------------------------------------------
+//Main
+int main()
+{
+	cout<<"Please wait while Initionalizing!\n";
+	int int_NumberRec(0);
+//	int one(1);
+//	int two(2);
+//	int zero(0);
+	clock_t start=clock();
+	vector<int>p_NumberMap(100000001,1); //初始化向量表
+	cout<<"NumberMap Intionalize OK!\n";
+	cout<<"Please wait while Factoring......\n";
+	SetFactors(p_NumberMap);
+	cout<<"Factor done!\n";
+	cout<<"Please wait while Paralelling......\n";
+	SetParalle(p_NumberMap);
+	cout<<"Factor done!\n";
+	cout<<"You spent more than ";
+	cout<<((clock()*1.0-start)/(CLK_TCK*1.0));
+	cout<<" seconds to set the number table!\n";
+//	cout<<p_NumberMap[7]<<'\n';
+/*	if(p_NumberMap[7]==2)
+	{
+		cout<<"Compara OK!\n";
+	}
+	else
+	{
+		cout<<"Compara False!\n";
+	}*/
+/*	for(int i=1;i<=999;i++)
+	{
+		cout<<i<<' '<<p_NumberMap[i]<<'\n';
+	}*/
+	cout<<"Please Input Numbers,WARING! Press EnterKey TWICE !!!!!:\n";//等待输入
+	istringstream sin_NumberCon;
+	int int_NumberT(0);
+	for(string s_StrRec;getline(cin,s_StrRec);)
+	{
+		for(istringstream sin_SinCon(s_StrRec);sin_SinCon>>int_NumberT;)
+		{
+			if(NumberTest(int_NumberT)) //判断输入是否合法
+			{
+//				cout<<int_NumberT<<'\n';
+//				cout<<p_NumberMap[int_NumberT]<<'\n';
+				if(p_NumberMap[int_NumberT]==2)
+				{
+//					cout<<"OK\n";
+					int_NumberResoult++;
+				}
+			}
+			else
+			{
+				cout<<"Your Number is WRONG!";  //出错处理
+			}
+		}
+		cout<<int_NumberResoult<<"\n";
+		int_NumberResoult=0;
+	}
+	return 0;
+}
+
+//=============================================================================================
+//Function Definition
+int NumberTest(int int_NumberTemp)
+{
+	if((1 < int_NumberTemp) && (int_NumberTemp < 100000000))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+void SetFactors(vector<int>&p_Temp)
+{
+	for(int i=2;i < 10000;i++)
+	{
+		for(int j=2;i*j<100000000;j++)
+		{
+			p_Temp[i*j]=0;
+		}
+	}
+	p_Temp[1]=0;
+	p_Temp[100000000]=0;
+}
+void SetParalle(vector<int>&p_Temp)
+{
+	p_Temp[2]=2;
+	p_Temp[3]=2;
+	p_Temp[5]=2;
+	p_Temp[7]=2;
+	p_Temp[11]=2;
+//	cout<<p_Temp[7]<<'\n';
+	for(int a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			if(p_Temp[a*100+b*10+a]==1)
+			{
+				p_Temp[a*100+b*10+a]=2;
+//				cout<<p_Temp[a*100+b*10+a]<<'\n';
+			}
+		}
+	}
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			if(p_Temp[a*1000+b*100+b*10+a]==1)
+			{
+				p_Temp[a*1000+b*100+b*10+a]=2;
+//				cout<<p_Temp[a*1000+b*100+b*10+a]<<'\n';
+			}
+		}
+	}
+//	cout<<"Please Press Anykey to Continue!!!!!\n";
+//	system("pause");
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				if(p_Temp[a*10000+b*1000+c*100+b*10+a]==1)
+				{
+					p_Temp[a*10000+b*1000+c*100+b*10+a]=2;
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				if(p_Temp[a*100000+b*10000+c*1000+c*100+b*10+a]==1)
+				{
+					p_Temp[a*100000+b*10000+c*1000+c*100+b*10+a]=2;
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					if(p_Temp[a*1000000+b*100000+c*10000+d*1000+c*100+b*10+a]==1)
+					{
+						p_Temp[a*1000000+b*100000+c*10000+d*1000+c*100+b*10+a]=2;
+					}
+				}
+			}
+		}
+	}
+	for(a=1;a<=9;a++)
+	{
+		for(int b=0;b<=9;b++)
+		{
+			for(int c=0;c<=9;c++)
+			{
+				for(int d=0;d<=9;d++)
+				{
+					if(p_Temp[a*10000000+b*1000000+c*100000+d*10000+d*1000+c*100+b*10+a]==1)
+					{
+						p_Temp[a*10000000+b*1000000+c*100000+d*10000+d*1000+c*100+b*10+a]=2;
+					}
+				}
+			}
+		}
+	}
+}
+
+
